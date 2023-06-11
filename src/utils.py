@@ -29,7 +29,7 @@ def conv_date(data):
     return date_formatted
 
 
-def conv_number_kart(number_kart=""):
+def conv_number_kart(number_kart=" "):
     """
     Форматирование номера карты
     """
