@@ -22,8 +22,6 @@ def load_operation(FILE):
         last_operations = sorted_operations[:5]
         return last_operations
 
-
-
 def conv_date(data):
     """
     Форматирование даты
@@ -31,7 +29,6 @@ def conv_date(data):
     thedate = datetime.fromisoformat(data)
     date_formatted = thedate.strftime("%d.%m.%Y")
     return date_formatted
-
 
 def conv_number_kart(number_kart=" "):
     """
@@ -41,7 +38,6 @@ def conv_number_kart(number_kart=" "):
     new_number = new[-1][:4] + " " + new[-1][4:6] + "**" + " " + "****" + " " + new[-1][-4:]
     new[-1] = new_number
     return " ".join(new)
-
 
 def conv_number_account(number_account):
     """
