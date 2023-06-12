@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "project-curs"
+version = "0.1.0"
+description = ""
+authors = ["Вадим <kantora_70@mail.ru>"]
+readme = "README.md"
+packages = [{include = "project_curs"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
