@@ -1,5 +1,5 @@
 from src.utils import conv_date, conv_number_account, conv_number_kart, load_operation
-
+import pytest
 """Создаем функции тестирования"""
 def test_conv_date():
     assert conv_date("2018-12-22T05:10:49.857412") == "22.12.2018"
@@ -15,7 +15,7 @@ def test_conv_number_kart():
     assert conv_number_kart("Карта 2842878893689012") == "Карта 2842 87** **** 9012"
     assert conv_number_kart("МИР 4878656375033856") == "МИР 4878 65** **** 3856"
     assert conv_number_kart("MasterCard 1435442169918409") == "MasterCard 1435 44** **** 8409"
-
+@pytest.fixture
 def test_load_operation(FILE):
     file_list = [
         {
